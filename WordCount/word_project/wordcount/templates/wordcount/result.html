@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        {% extends "wordcount/layout.html" %}
+
+        {% block title %}
+            result
+        {% endblock %}
+    </head>
+    {% block content %}
+        <div class="container1">
+            <h1>당신이 입력한 텍스트는 총
+                {{len_words}}개 입니다.</h1>
+            <button  class="btn btn-link btn-lg">
+                <a href="{% url 'home'%}">다시하기</a>
+            </button>
+            <br><br>
+            <h2>입력한 텍스트</h2>
+            {{all_text}}
+            <br><br>
+            <div class="card">
+                <div class="card-body">
+                    <h2>단어 종류</h2>
+                    <ul class="list-group">
+                        {% for word, word_num in word_dictionary %}
+                            <div class="li">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    {{word}}
+                                    <span class="badge badge-primary badge-pill">{{word_num}}</span>
+                                </li>
+                            </div>
+                        </ul>
+                        {%endfor%}
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+        {% endblock %}
+    </html>
