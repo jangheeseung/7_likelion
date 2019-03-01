@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Jua');
+
+nav{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.container{
+    margin-left:14rem;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.container2{
+    margin: auto;
+    width: 50%;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.new_row{
+    margin-top:6rem;
+    padding: 2.5rem;
+    border: 3px solid #000000;
+}
+.btn-outline-primary{
+    float: right;
+}
+
+.new_button{
+    margin-bottom: 3rem;
+}
+
+label{
+    font-size: 1.2rem;
+}

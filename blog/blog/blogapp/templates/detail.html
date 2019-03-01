@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+{% load static %}
+{% block title %}detail{% endblock %}
+{% block content %}
+<div class="container">
+        <div class="card" style="width: 60rem; margin: 1rem">
+            <div class="card-body">
+                <h5 class="card-title">{{details.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{details.pub_date}}</h6>
+                <p class="card-text">{{details.body}}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
